@@ -42,6 +42,8 @@ const AddUser = (props) => {
     }
     props.onAddUser(enteredUser, enteredAge);
     console.log(enteredUser, enteredAge);
+    setEnteredUser("")
+    setEnteredAge('')
   };
   const errorHandler = () => {
     setErrors(null);
